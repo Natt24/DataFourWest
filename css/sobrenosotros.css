@@ -1,0 +1,179 @@
+@font-face {
+    font-family: roboto;
+    src: url('/font/Roboto/Roboto-Regular.ttf');
+}
+
+.welcome{
+  display: flex;
+  position: static;
+  top: 4rem;
+  max-height: 30rem;
+  
+  background-color: black;
+  flex-direction: column;
+  margin: 0;
+  max-width: 100vw;
+}
+
+.welcome video{
+  top: 0rem;
+  margin: 0;
+  max-width: 100vw;
+}
+
+.welcome-text{
+  color: rgb(213,176,20);
+  font-family: roboto;
+  max-width: 100vw;
+  background-color: black;
+  z-index: 1;
+  box-shadow: 1px 1px 5px 5px black;
+  -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+.welcome-text h2{
+  margin: 1rem;
+  margin-left: 1rem;
+  font-size:larger;
+}
+
+.welcome-text p{
+  margin: 1rem;
+  margin-left: 1rem;
+  font-size: medium;
+}
+
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+/*media mobile*/
+
+@media (max-width:768px) and (min-width:320px){
+  .welcome{
+    display: flex;
+    position: static;
+    top: 4rem;
+    max-height: 30rem;
+    background-color: black;
+    flex-direction: column;
+    margin: 0;
+    max-width: 100vw;
+}
+
+.welcome video{
+    top: 0rem;
+    margin: 0;
+    max-width: 100vw;
+}
+
+.welcome-text{
+    color: rgb(213,176,20);
+    font-family: roboto;
+    max-width: 100vw;
+    background-color: black;
+    z-index: 1;
+    box-shadow: 1px 1px 5px 5px black;
+    -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+.welcome-text h2{
+    margin: 1rem;
+    margin-left: 1rem;
+    font-size:larger;
+}
+
+.welcome-text p{
+    margin: 1rem;
+    margin-left: 1rem;
+    font-size: medium;
+}
+
+  @-webkit-keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+}
+
+/*media version tablet*/
+
+@media (max-width:1023px) and (min-width:768px) {
+
+  .welcome{
+    max-height: 50rem;
+  }
+  
+  .welcome-text h2{
+    margin: 0;
+    margin-left: 1rem;
+    margin-top: 1rem;
+
+    font-size: 16pt;
+  }
+
+  .welcome-text p{
+    font-size: 14pt;
+  }
+}
+
+/*media version desktop*/
+@media (min-width:1024px) {
+  .welcome{
+    max-height: 70rem;
+    flex-direction: row;
+    background: linear-gradient(90deg, rgba(13,11,1,1) 0%, rgba(0,0,0,1) 55%, rgba(0,0,0,0) 83%);
+  }
+
+  .welcome-text{
+    box-shadow: none;
+  }
+
+
+  .welcome video{
+    width: 50vw;
+    z-index: -1;
+  }
+}

@@ -1,0 +1,480 @@
+@font-face {
+    font-family: roboto;
+    src: url('/font/Roboto/Roboto-Regular.ttf');
+}
+
+header{
+  position: static;
+  max-width: 100vw;
+  min-height: 3rem;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  z-index: 3;
+  margin: 0;
+}
+
+header button{
+margin-right: 2rem;
+}
+
+.header-buttons{
+margin: 0;
+background-color: black;
+padding: 0.3rem;
+width: 100vw;
+position: static;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+z-index: 3;
+}
+
+.menu{
+margin-left: 0.5rem;
+}
+
+.logo img{
+margin-left: 1.5rem;
+  min-width: 3rem;
+  max-width: 8rem;
+}
+
+.nav-links{
+  background-color: black;
+  width: 100vw;
+  position: fixed;
+  top: 4.4rem;
+  display: flex;
+  justify-content:flex-start;
+  align-items:center;
+  
+  -webkit-animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  z-index: 2;
+}
+
+.nav-links li{
+  margin: 1rem;
+  list-style: none;
+  border-bottom: 1px solid rgb(213,176,20);
+}
+
+.nav-links li a{
+  color: rgb(213,176,20);
+  font-family: roboto;
+  font-size: medium;
+  font-weight: 500;
+}
+
+
+.header-alternate{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+position: fixed;
+bottom: 0;
+z-index: 4;
+}
+
+.button-contact{
+background-color: black;
+width: 4rem;
+height: 4rem;
+margin-bottom: 0.5rem;
+margin-right: 0.6rem;
+border-color: rgb(213,176,20);
+border:  solid 0.8rem;
+border-radius: 2rem;
+}
+
+.button-contact img{
+width: 2rem;
+}
+
+.nav-links-alternate{
+background-color: black;
+width: 100vw;
+position: fixed;
+bottom: 5rem;
+display: flex;
+justify-content:flex-start;
+align-items:center;
+z-index: 2;
+}
+
+.nav-links-alternate li{
+margin: 1rem;
+list-style: none;
+border-bottom: 1px solid rgb(213,176,20);
+}
+
+.nav-links-alternate li a{
+color: rgb(213,176,20);
+font-family: roboto;
+font-size: medium;
+font-weight: 500;
+}
+
+@-webkit-keyframes slide-in-top {
+  0% {
+    -webkit-transform: translateY(-1000px);
+            transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-top {
+  0% {
+    -webkit-transform: translateY(-1000px);
+            transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+/*media mobile*/
+@media (max-width:768px) and (min-width:320px) {
+  header{
+    position: static;
+    max-width: 100vw;
+    min-height: 3rem;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    z-index: 3;
+    margin: 0;
+}
+
+header button{
+  margin-right: 2rem;
+}
+
+.header-buttons{
+  margin: 0;
+  background-color: black;
+  padding: 0.3rem;
+  width: 100vw;
+  position: static;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 3;
+}
+
+.menu{
+  margin-left: 0.5rem;
+  display: block;
+}
+
+.logo img{
+  margin-left: 1.5rem;
+    min-width: 3rem;
+    max-width: 8rem;
+}
+
+.nav-links{
+    background-color: black;
+    width: 100vw;
+    position: fixed;
+    top: 4.4rem;
+    display: flex;
+    justify-content:flex-start;
+    align-items:center;
+    
+    -webkit-animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    z-index: 2;
+}
+
+.nav-links li{
+    margin: 1rem;
+    list-style: none;
+    border-bottom: 1px solid rgb(213,176,20);
+}
+
+.nav-links li a{
+    color: rgb(213,176,20);
+    font-family: roboto;
+    font-size: medium;
+    font-weight: 500;
+}
+
+
+.header-alternate{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  z-index: 4;
+}
+
+.button-contact{
+  background-color: black;
+  width: 4rem;
+  height: 4rem;
+  margin-bottom: 0.5rem;
+  margin-right: 0.6rem;
+  border-color: rgb(213,176,20);
+  border:  solid 0.8rem;
+  border-radius: 2rem;
+}
+
+.button-contact img{
+  width: 2rem;
+}
+
+.nav-links-alternate{
+  background-color: black;
+  width: 100vw;
+  position: fixed;
+  bottom: 5rem;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  z-index: 2;
+}
+
+.nav-links-alternate li{
+  margin: 1rem;
+  list-style: none;
+  border-bottom: 1px solid rgb(213,176,20);
+}
+
+.nav-links-alternate li a{
+  color: rgb(213,176,20);
+  font-family: roboto;
+  font-size: medium;
+  font-weight: 500;
+}
+
+@-webkit-keyframes slide-in-top {
+    0% {
+      -webkit-transform: translateY(-1000px);
+              transform: translateY(-1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-top {
+    0% {
+      -webkit-transform: translateY(-1000px);
+              transform: translateY(-1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+}
+
+/*media version tablet*/
+@media (max-width:1023px) and (min-width:768px) {
+
+  .menu{
+    display: block;
+  }
+
+  .nav-links li{
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-links a{
+    font-size: 16pt;
+  }
+
+
+  .nav-links-alternate{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-links-alternate li{
+    padding: 0;
+    width: 25%;
+  }
+
+  .nav-links-alternate a{
+    font-size: 16pt;
+  }
+
+}
+
+/*media version desktop*/
+@media (min-width:1024px) {
+  header{
+    border-bottom: 0.2rem solid;
+    border-color: rgb(213,176,20);
+  }
+
+  .nav-desktop{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .nav-desktop li{
+    list-style: none;
+    margin-right: 0.5rem;
+  }
+
+  .nav-desktop a{
+    font-size: 12pt;
+    font-weight: 600;
+    font-family: roboto;
+    color: rgb(213,176,20);
+    position: relative;
+  }
+
+  .nav-desktop a::after{
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -0.2rem;
+    left: 0;
+    height: 0.2rem;
+    width: 100%;
+    background-color: rgb(213,176,20);
+    border-radius: 10px;
+
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .nav-desktop a:hover::after{
+    transform-origin: left;
+    transform: scaleX(1);
+  }
+
+  .logo-desktop{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0;
+    margin: 0;
+  }
+
+  .logo-desktop span{
+    color: rgb(213,176,20);
+    margin-left: 1.3rem;
+    font-family: roboto;
+    font-weight: 600;
+  }
+
+  /*estilos de nav fixed*/
+
+  .nav-desktop-alternate{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    z-index: 4;
+    top: 0;
+    margin: 0;
+  }
+
+  .nav-links-desktop{
+    display: flex;
+    flex-direction: row;
+    font-family: roboto;
+    gap: 1rem;
+  }
+
+  .nav-links-desktop li{
+    list-style: none;
+    border-radius: 10px;
+    border: 0;
+  }
+
+  .nav-links-desktop a{
+    color: rgb(213,176,20);
+    font-weight: 600;
+    font-size: 12pt;
+    position: relative;
+  }
+
+  .nav-links-desktop a::after{
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -0.2rem;
+    left: 0;
+    height: 0.2rem;
+    width: 100%;
+    background-color: rgb(213,176,20);
+    border-radius: 10px;
+
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .nav-links-desktop a:hover::after{
+    transform-origin: left;
+    transform: scaleX(1);
+  }
+
+
+  .logo-whatsapp-fixed{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    bottom: 1rem;
+    right: 1rem;    
+    border-radius: 50%;
+    transition: 1s;
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .logo-whatsapp-fixed:hover{
+    box-shadow: 1px 1px 10px 3px rgb(213,176,20);
+  }
+
+  .logo-whatsapp-fixed img{
+    width: 2rem;
+    height: 2rem;
+  }
+
+}
+
+
+

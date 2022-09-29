@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data4West</title>
+
+    <link rel="stylesheet" href="css/body.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/sobrenosotros.css">
+    <link rel="stylesheet" href="css/work.css">
+    <link rel="stylesheet" href="css/services.css">
+    <link rel="stylesheet" href="css/work-this-us.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+</head>
+<body>
+    <!-- Header principal: version mobile, tablet, desktop -->
+    <!-- Este header es el que se visualiza principalmente, se posiciona en el sector superior de la pantalla -->
+    <!-- Cuenta con 3 botones -->
+    <!-- El boton izquierdo "menu", acciona el slider principal -->
+    <!-- El boton medio "Logo", acciona la recarga de la vista principal de la pagina -->
+    <!-- El boton derecho $EN PROCESO DE DISEÑO Y FUNCIONAMIENTO (DEBATE)$ -->
+    <header>
+        <div class="header-buttons">
+            <a class="menu" id="menu" style="display: none;">
+                <img src="multimedia/menu.png" alt="">
+            </a>
+    
+            <a href="" class="logo" id="logo-mobile-tablet" style="display: none;">
+                <img src="multimedia/D4W.png" alt="">
+            </a>
+
+            <div class="logo-desktop" id="logo-desktop" style="display: none;">
+                <a href="" class="logo">
+                    <img src="multimedia/D4W.png" alt="">
+                </a>
+                <span>Data Four West</span>
+            </div>
+
+            <nav class="nav-desktop" id="header-nav-desktop" style="display: none;">
+                <li><a href="#welcome">Sobre Nosotros</a></li>
+                <li><a href="#works">Nuestros Trabajos</a></li>
+                <li><a href="#services">Servicios</a></li>
+                <li><a href="#work-this-us">Trabaja con Nosotros</a></li>
+                <li><a href="">Contactanos</a></li>
+            </nav>
+    
+            <button class="switch-mode">
+                modo
+            </button>
+        </div>
+    </header>
+
+    <!-- Header alternativo: version mobile y tablet -->
+    <!-- Este header es el que se visualiza al hacer scroll, se posiciona en el sector inferior de la pantalla -->
+    <!-- Cuenta con 3 botones -->
+    <!-- El boton izquierdo "menu", acciona el slider alternativo -->
+    <!-- El boton medio "Logo", acciona la recarga de la vista principal de la pagina -->
+    <!-- El boton derecho "Contacto" redirreciona al cliente a la pagina de whatsapp para comunicarse-->
+    <header id="header-alternate" class="header-alternate" style="display: none;">
+        <div class="header-buttons">
+            <a class="menu" id="menu-alternate" style="display: block;">
+                <img src="multimedia/menu.png" alt="">
+            </a>
+    
+            <a href="" class="logo">
+                <img src="multimedia/D4W.png" alt="">
+            </a>
+    
+            <button class="button-contact">
+                <img src="multimedia/whatsapp.png" alt="">
+            </button>
+        </div>
+    </header>
+    <!-- Slider menu del header principal para version mobile y tablet -->
+    <!-- Este Slider al ser accionado, se desplaza de la parte superior hacia la parte inferior-->
+    <!-- Se posiciona justo debajo del header principal -->
+    <!-- Consta con 6 botones, de los cuales 2 botones alternan entre si dependiento desde el dispositivo que este siendo visualizado -->
+    <!-- Cada boton ubica al cliente en la seccion que desea visualizar exceptuado el boton "Contactanos" el cual lo redirecciona a nuestra pagina de whatsapp -->
+    <nav id="slider" class="nav-links" style="display: none;">
+        <li><a href="#welcome">Sobre Nosotros</a></li>
+        <li><a href="#works">Nuestros Trabajos</a></li>
+        <li><a href="#services">Servicios</a></li>
+        <li id="work-this-us-link-mobile" style="display: none;"><a href="#work-this-us-mobile">Trabaja con Nosotros</a></li>
+        <li id="work-this-us-link-tablet" style="display: none;"><a href="#work-this-us-tablet">Trabaja con Nosotros</a></li>
+        <li><a id="cc">Contactanos</a></li>
+    </nav>
+
+    <!-- Slider menu del header alternativo para version mobile y tablet -->
+    <!-- Este Slider al ser accionado, se desplaza de la parte inferior hacia la parte superior-->
+    <!-- Se posiciona justo encima del header alternativo -->
+    <!-- Consta con 5 botones, de los cuales 2 botones alternan entre si dependiento desde el dispositivo que este siendo visualizado -->
+    <!-- Cada boton ubica al cliente en la seccion que desea visualizar -->
+    <nav id="slider-alternate" class="nav-links-alternate" style="display: none;">
+        <li><a href="#welcome">Sobre Bosotros</a></li>
+        <li><a href="#works">Nuestros Trabajos</a></li>
+        <li><a href="#services">Servicios</a></li>
+        <li id="work-this-us-link-mobile-alternate" style="display: none;"><a href="#work-this-us-mobile" >Trabaja con Nosotros</a></li>
+        <li id="work-this-us-link-tablet-alternate" style="display: none;"><a href="#work-this-us-tablet">Trabaja con Nosotros</a></li>
+    </nav>
+
+    <!-- Nav para la version desktop -->
+    <!-- FALTA DOCUMENTACION -->
+    <nav class="nav-desktop-alternate" id="nav-desktop-alternate" style="display:none;">
+        <a href="" class="logo">
+            <img src="multimedia/D4W.png" alt="">
+        </a>
+        <div class="nav-links-desktop">
+            <li><a href="#welcome">Sobre Nosotros</a></li>
+                <li><a href="#works">Nuestros Trabajos</a></li>
+                <li><a href="#services">Servicios</a></li>
+                <li><a href="#work-this-us">Trabaja con Nosotros</a></li>
+        </div>
+        <button class="switch-mode">
+            modo
+        </button>
+
+        <div class="logo-whatsapp-fixed">
+            <a href=""><img src="multimedia/whatsapp.png" alt=""></a>
+        </div>
+    </nav>
+
+    
+
+    <!-- Seccion de bienvenida para version mobile, tablet, desktop -->
+    <!-- En esta seccion solo se cuenta un poco sobre el objetivo, y cultura de la empresa -->
+    <!-- Tambien en esta seccion se visualiza un video el cual se posicion debajo del texto -->
+    <!-- NO DAR INFORMACION DE NINGUN PERSONAL DE LA EMPRESA -->
+    <section class="welcome">
+        <div class="welcome-text" id="welcome">
+            <h2>Bienvenido al sitio web de Data 4 West</h2>
+            <p>Somos una compañia dispuesta a ayudar a las empresas en su crecimiento con planificaciones estrategicas
+                atravez de un proceso digital e innovador.</p>
+        </div>
+            <video autoplay muted loop>
+                <source src="multimedia/conferencia.mp4" type="video/mp4">
+            </video>
+    </section>
+    
+    <!-- Seccion de "Nuestros Trabajos"-->
+    <!-- En esta seccion se visualiza los tipos de trabajos que lleva acabo la empresa, en los cuales se detalla un poco cada uno-->
+    <!-- En la version mobile y tablet se visualiza como una lista de una sola columna-->
+    <!-- La lista es parcialmente visualizada -->
+    <!-- La lista se puede navegar con un scroll vertical -->
+    <section class="works" id="works" style="display: none;">
+        <h4>Nuestros sectores de trabajos</h4>
+        <div class="works-list" id="works-list">
+            <ul>
+                <li>
+                    <img src="multimedia/banco.png" alt="">
+                    <span>
+                        Tenes un equipo que trabaja de manera tercerizada para proyectos de software para entidades financieras, asi dando apoyo, soluciones y
+                        estrategias para dar un desarrollo mas eficaz y productivo.
+                    </span>
+                </li>
+                <li>
+                    <img src="multimedia/telefono-inteligente.png" alt="">
+                    <span>Todas nuestras paginas son responsive, se trabajan de modo "mobile first"
+                        para que tu pagina pueda ser visibilizada desde cualquier dispositivo sin ningun tipo de inconveniente
+                    </span>
+                </li>
+                <li>
+                    <img src="multimedia/bulbo.png" alt="">
+                    <span>
+                        Nuestros equipos apoyan y colaboran en proyectos de impactos sociales y ambientales sin fines de lucro
+                    </span>
+                </li>
+                    <li>
+                        <img src="multimedia/dolar.png" alt="">
+                        <span>e-commerce</span>
+                    </li>
+                    <li>
+                        <img src="multimedia/globo.png" alt="">
+                        <span>pagina web sencilla</span>
+                    </li>
+                    <li>
+                        <img src="multimedia/grafico-histograma.png" alt="">
+                        <span>sistemas web de control de stock</span>
+                    </li>
+                    <li>
+                        <img src="multimedia/mundo.png" alt="">
+                        <span>no se</span>
+                    </li>
+            </ul>
+        </div>
+
+        <div class="btn-more-list" id="btn-more-list" style="display: none;">
+            <a id="btn-more-list" >
+                <span>Mostrar mas</span>
+                <img src="multimedia/more.png" alt="">
+            </a>
+        </div>
+    </section>
+
+    <section class="works" id="works-desktop" style="display: none;">
+        <h4>Nuestros sectores de trabajos</h4>
+        <div class="works-list" id="works-list">
+            <ul>
+                <li>
+                    <img src="multimedia/banco.png" alt="">
+                    <span>
+                        Tenes un equipo que trabaja de manera tercerizada para proyectos de software para entidades financieras, asi dando apoyo, soluciones y
+                        estrategias para dar un desarrollo mas eficaz y productivo.
+                    </span>
+                </li>
+                <li>
+                    <img src="multimedia/telefono-inteligente.png" alt="">
+                    <span>Todas nuestras paginas son responsive, se trabajan de modo "mobile first"
+                        para que tu pagina pueda ser visibilizada desde cualquier dispositivo sin ningun tipo de inconveniente
+                    </span>
+                </li>
+                <li>
+                    <img src="multimedia/bulbo.png" alt="">
+                    <span>
+                        Nuestros equipos apoyan y colaboran en proyectos de impactos sociales y ambientales sin fines de lucro
+                    </span>
+                </li>
+            
+                    <li>
+                        <img src="multimedia/dolar.png" alt="">
+                        <span>e-commerce</span>
+                    </li>
+            </ul>
+                <ul>
+                    <li>
+                        <img src="multimedia/globo.png" alt="">
+                        <span>pagina web sencilla</span>
+                    </li>
+                    <li>
+                        <img src="multimedia/grafico-histograma.png" alt="">
+                        <span>sistemas web de control de stock</span>
+                    </li>
+                    <li>
+                        <img src="multimedia/mundo.png" alt="">
+                        <span>no se</span>
+                    </li>
+                </ul>
+        </div>
+
+        <div class="btn-more-list" id="btn-more-list" style="display: none;">
+            <a id="btn-more-list" >
+                <span>Mostrar mas</span>
+                <img src="multimedia/more.png" alt="">
+            </a>
+        </div>
+    </section>
+
+    <!-- Seccion de "Servicios" -->
+    <!-- En esta seccion se visualiza los servicios cada uno con lo que incluye y sus precios -->
+    <!-- Cada servicio se visualiza en una tarjeta-->
+    <!-- La lista de servicios es parcialmente visualizada -->
+    <!-- La lista de servicios se puede navegar con un scroll horizontal -->
+    <!-- Cada tarjeta de servicio contara con un boton "Consultar" el cual tendra un HREF hacia nuestra pagina de whatsapp -->
+    <!-- Cada boton "Consultar" tiene un mensaje unico de cada servicio -->
+    <section class="services" id="services">
+        <ul>
+            hola
+            <span>hola</span>
+        </ul>
+        <ul>chau</ul>
+        <ul>ola</ul>
+        <ul>adios</ul>
+        <ul>bye</ul>
+    </section>
+
+    <!-- Seccion de "Trabaja con Nosotros" version Mobile -->
+    <!-- En esta seccion se visualiza una propuesta de postulacion y un formulario opcional para dicha postulacion -->
+    <!-- El formulario se visualiza en el centro de la pantalla -->
+    <!-- El formulario cuenta con los siguientes atributos: Nombre, Apellido, Email, Curriculum "Cargable" y Descripcion -->
+    <!-- Cuenta con un boton submit -->
+    <!-- Este formulario enviara la informacion atravez de la plataforma Gmail al correo de la empresa -->
+    <section class="work-this-us" id="work-this-us-mobile" style="display: none;">
+        <h2>Trabaja con nosotros</h2>
+        <p>Si quieres ser parte de nuestros talentos, envianos tu cv y una pequeña descripcion sobre ti
+            , ingresa a nuestra base de datos y se el primero en la fila en las actuales o futuras busquedas de talentos
+        </p>
+        <form action="/" method="post">
+                <input type="text" name="nombre" placeholder="Nombre">
+                <input type="text" name="apellido" placeholder="Apelido">
+            <input type="email" name="email" id="email" placeholder="Email">
+            <input type="file" name="" id="" accept=".doc, .docx, .pdf">
+            <textarea type="text" name="descripcion" 
+            placeholder="Descripcion" maxlength="200" minlength="10" 
+            size="12" spellcheck="true" cols="30" rows="10"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Seccion de "Trabaja con Nosotros" version Tablet y desktop  -->
+    <!-- En esta seccion se visualiza una propuesta de postulacion y un formulario opcional para dicha postulacion -->
+    <!-- En esta version el formulario se visualiza el lado izquierdo de la pantalla ocupando un 50% -->
+    <!-- En el otro 50% se visualiza una imagen de contrato -->
+      <!-- El formulario cuenta con los siguientes atributos: Nombre, Apellido, Email, Curriculum "Cargable" y Descripcion -->
+    <!-- Cuenta con un boton submit -->
+    <!-- Este formulario enviara la informacion atravez de la plataforma Gmail al correo de la empresa -->
+    <section class="work-this-us" id="work-this-us" style="display: none;">
+        <div class="conteiner-work-this-us">
+            <div class="work-this-us-form">
+                <h2>Trabaja con nosotros</h2>
+                <p>Si quieres ser parte de nuestros talentos, envianos tu cv y una pequeña descripcion sobre ti
+                    , ingresa a nuestra base de datos y se el primero en la fila en las actuales o futuras busquedas de talentos
+                </p>
+                <form action="/" method="post">
+                    <input type="text" name="nombre" placeholder="Nombre">
+                    <input type="text" name="apellido" placeholder="Apelido">
+                    <input type="email" name="email" id="email" placeholder="Email">
+                    <input type="file" name="" id="" accept=".doc, .docx, .pdf">
+                    <textarea type="text" name="descripcion" 
+                    placeholder="Descripcion" maxlength="200" minlength="10" 
+                    size="12" spellcheck="true" cols="30" rows="10"></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    
+    <!-- Footer version Mobile y Tablet -->
+    <!-- Este footer esta dividido en tres partes -->
+    <!-- La primera parte, muestra el logo de la empresa en el sector izquierdo de la pantalla (No es accionable)-->
+    <!-- La segunda seccion se muestra la lista de secciones de la pagina en la parte superior derecha -->
+    <!-- Esta lista en la version Mobile se divide en dos columnas, una contando con 3 enlaces y la segunda con 2 enlaces -->
+    <!-- En la version tablet se divide en 5 columnas y una sola fila, en la cada enlace se posiciona en una columna -->
+    <!-- En la tercera parte se muestra 3 logos de redes sociales de la empresa la cual en ambas versiones de se muestra como una fila de 3 columnas en la cual cada logo se posiciona en cada una de ellas -->
+    <!-- Cada logo es accionable, los cuales redireccionas a dicha red social de la empresa -->
+    <!-- En la parte inferior centro del footer se visualiza el Copyright -->
+    <footer>
+        <img class="footer-logo" src="multimedia/D4W.png" alt="">
+        <div class="conteiner-footer" id="conteiner-footer-mobile" style="display: none;">
+            <div class="footer-relinks">
+                <ul>
+                    <li><a href="#welcome">Sobre Nosotros</a></li>
+                    <li><a href="#works">Nuestros Trabajos</a></li>
+                    <li><a href="#services">Servicios</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#work-this-us-mobile">Trabaja con Nosotros</a></li>
+                    <li><a href="">Contactanos</a></li>
+                </ul>
+            </div>
+            <hr>
+            <div class="footer-links">
+                <li>
+                    <a href="https://api.whatsapp.com/send?phone=541125982658&text=Hola,%20¿todo%20bien?" target="_blank">
+                        <img src="multimedia/whatsapp.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/LIGA-f%C3%BAtbol-TOTAL-527136627441581" target="_blank">
+                        <img src="multimedia/facebook.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/ligfutboltotal/" target="_blank">
+                        <img src="multimedia/instagram.png" alt="">
+                    </a>
+                </li>
+        </div>
+        <div class="copyright">
+            <p>Copyright © DataFourWest 2022</p>
+        </div>
+        </div>
+        <div class="conteiner-footer" id="conteiner-footer" style="display: none;">
+            <div class="footer-relinks">
+                <ul>
+                    <li><a href="#welcome">Sobre Nosotros</a></li>
+                    <li><a href="#works">Nuestros Trabajos</a></li>
+                    <li><a href="#services">Servicios</a></li>
+                    <li><a href="#work-this-us-tablet">Trabaja con Nosotros</a></li>
+                    <li><a href="">Contactanos</a></li>
+                </ul> 
+            </div>
+            <hr>
+            <div class="footer-links">
+                <li>
+                    <a href="https://api.whatsapp.com/send?phone=541125982658&text=Hola,%20¿todo%20bien?" target="_blank">
+                        <img src="multimedia/whatsapp.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/LIGA-f%C3%BAtbol-TOTAL-527136627441581" target="_blank">
+                        <img src="multimedia/facebook.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/ligfutboltotal/" target="_blank">
+                        <img src="multimedia/instagram.png" alt="">
+                    </a>
+                </li>
+        </div>
+        <div class="copyright">
+            <p>Copyright © DataFourWest 2022</p>
+        </div>
+        </div>
+    </footer>
+
+
+    <script src="js/header.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+
+        //Funcion Smooth Scrolling
+        $(document).ready(function(){
+          // Add smooth scrolling to all links
+          $("a").on('click', function(event) {
+        
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+              // Prevent default anchor click behavior
+              event.preventDefault();
+        
+              // Store hash
+              var hash = this.hash;
+        
+              // Using jQuery's animate() method to add smooth page scroll
+              // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 900, function(){
+        
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              });
+            } // End if
+          });
+        });
+
+
+        //funcion de header hecha para mobile
+        //FUNCIONAMIENTO: genera el header fixed cuando esta en un dispositivo mobile
+        //Mantiene el header dentro de un limite de pantalla (especificado para dispositivos mobile)
+        $(function() {
+        $(window).scroll(function() {
+            var scroll = $(window).scrollTop();
+            if($(window).width() <= 700){
+                if (scroll >= 60 && scroll<=1000) {
+                $("#header-alternate").show("1s");
+                } else {
+                    $("#header-alternate").hide("1s");
+                }
+            }
+            });
+        });
+        //funcion de slider hecha para mobile
+        //FUNCIONAMIENTO: genera el slider fixed cuando esta en un dispositivo mobile
+        $('#menu-alternate').on("click", function(){
+            var scroll = $(window).scrollTop();
+            if($(window).width() <= 700){
+            if (scroll >= 60 && scroll<=1100) {
+                $("#slider-alternate").slideToggle(800);
+            }
+        }
+        });
+        //funcion de slider hecha para mobile
+        //FUNCIONAMIENTO: Mantiene el slider fixed dentro de un rango de pantalla, al pasarse de ese rango lo desaparece
+        $(function() {
+        $(window).scroll(function() {
+            var scroll = $(window).scrollTop();
+            if($(window).width() <= 700){
+            if (scroll <= 60 || scroll>=1100) {
+                $("#slider-alternate").hide('1s');
+                }
+            } 
+            });
+        });
+        //funcion de slider header principal para cualquier dispositivo
+        //FUNCIONAMIENTO: Desaparece el slider principal al pasarse de un limite de scroll
+        $(function() {
+        $(window).scroll(function() {
+            var scroll = $(window).scrollTop();
+            if (scroll >= 60) {
+                $("#slider").hide('1s');
+                }
+            });
+        });
+
+        //funcion de header para tablet
+        //FUNCIONAMIENTO: Genera el header fixed para dispositivos tablet 
+        //Mantiene el header dentro de un limite de pantalla (especificado para dispositivos tablet)
+        $(function() {
+        $(window).scroll(function() {
+            var scroll = $(window).scrollTop();
+            if($(window).width() >= 700 && $(window).width() <= 1023){
+                if (scroll >= 60 && scroll<=1100) {
+                $("#header-alternate").show("1s");
+                } else {
+                    $("#header-alternate").hide("1s");
+                }
+            }
+            });
+        });
+
+        //Funcion para header alternate
+        //FUNCIONAMIENTO: Previene la aparicion del header alternate dispositivos desktop
+        $(function () {
+            $(window).resize(function () {
+                if($(window).width() >= 1023){
+                    $('#header-alternate').hide();
+                }
+            })
+            
+        })
+
+        //funcion de slider hecha para tablet
+        //FUNCIONAMIENTO: Esta funcion alterna la aparicion del slider alternate accionada al hacer click en el button "menu"
+        //SOLO FUNCIONA EN DISPOSITIVOS TABLET
+        $('#menu-alternate').on("click", function(){
+            var scroll = $(window).scrollTop();
+            if($(window).width() >= 700 && $(window).width() <= 1023){
+            if (scroll >= 60 && scroll<=1000) {
+                $("#slider-alternate").slideToggle(800);
+            }
+        }
+        });
+
+
+        //funcion de slider alternate hecha para tablet
+        //FUNCIONAMIENTO: Mantiene el slider dentro de un limite de pantalla, en caso de excederlo escondera el slider alternate
+        $(function() {
+        $(window).scroll(function() {
+            var scroll = $(window).scrollTop();
+            if($(window).width() >= 700 && $(window).width() <= 1023){
+            if (scroll <= 60 || scroll>=900) {
+                $("#slider-alternate").hide('1s');
+                }
+            } 
+            });
+        });
+
+        //funciones para modificaciones de lineas de codigo para version mobile
+        //FUNCIONAMIENTO: Muestra secciones o links cuando se reconoce estar en un dispositivo mobile, en caso contrario oculta dichas secciones o links
+        //EJECUCION: Su ejecucion es en tiempo de compilacion, en dicho caso, solo se ejecuta una solo vez.
+        $(function() {
+        $(window).ready(function() {
+            if($(window).width() <= 766){
+                $('#conteiner-footer-mobile').show();
+                $('#work-this-us-mobile').show();
+                $('#work-this-us-link-mobile').show();
+                $('#work-this-us-link-mobile-alternate').show();
+            }else{
+                $('#conteiner-footer-mobile').hide();
+                $('#work-this-us-mobile').hide();
+                $('#work-this-us-link-mobile').hide();
+                $('#work-this-us-link-mobile-alternate').hide();
+            } 
+            });
+        });
+
+        //FUNCIONAMIENTO: Muestra secciones o links cuando se reconoce estar en un dispositivo mobile, en caso contrario oculta dichas secciones o links
+        //EJECUCION: Su ejecucion es en tiempo real, en dicho caso, se ejecuta cada vez que el tamaño de la pantalla se modifica(No se ejecuta al iniciar la pantalla).
+        $(function() {
+        $(window).resize(function() {
+            if($(window).width() <= 766){
+                $('#conteiner-footer-mobile').show();
+                $('#work-this-us-mobile').show();
+                $('#work-this-us-link-mobile').show();
+                $('#work-this-us-link-mobile-alternate').show();
+            }else{
+                $('#conteiner-footer-mobile').hide();
+                $('#work-this-us-mobile').hide();
+                $('#work-this-us-link-mobile').hide();
+                $('#work-this-us-link-mobile-alternate').hide();
+            } 
+            });
+        });
+
+        //funciones para modificaciones de lineas de codigo para version tablet
+        //FUNCIONAMIENTO: Muestra secciones o links cuando se reconoce estar en un dispositivo tablet, en caso contrario oculta dichas secciones o links
+        //EJECUCION: Su ejecucion es en tiempo de compilacion, en dicho caso, solo se ejecuta una solo vez.
+        $(function() {
+        $(window).ready(function() {
+            if($(window).width() >= 767 && $(window).width() <= 1023){
+                $('#conteiner-footer-tablet').show();
+                $('#work-this-us-link-tablet').show();
+                $('#work-this-us-link-tablet-alternate').show();
+            }else{
+                $('#conteiner-footer-tablet').hide();
+                $('#work-this-us-link-tablet').hide();
+                $('#work-this-us-link-tablet-alternate').hide();
+            } 
+            });
+        });
+
+        //FUNCIONAMIENTO: Muestra secciones o links cuando se reconoce estar en un dispositivo tablet, en caso contrario oculta dichas secciones o links
+        //EJECUCION: Su ejecucion es en tiempo real, en dicho caso, se ejecuta cada vez que el tamaño de la pantalla se modifica(No se ejecuta al iniciar la pantalla).
+        $(function() {
+        $(window).resize(function() {
+            if($(window).width() >= 767 && $(window).width() <= 1023){
+                $('#work-this-us-link-tablet').show();
+                $('#work-this-us-link-tablet-alternate').show();
+            }else{
+                $('#work-this-us-link-tablet').hide();
+                $('#work-this-us-link-tablet-alternate').hide();
+            } 
+            });
+        });
+
+        //Funcion para seccion work-this-us version tablet y desktop
+        //FUNCIONAMIENTO: Muestra la seccion cuando reconoce estar en un dispositivo tablet o desktop, en caso contrario lo oculta
+        //EJECUCION: Su ejecucion es en tiempo de compilacion, en dicho caso, solo se ejecuta una solo vez.
+        $(function() {
+        $(window).ready(function() {
+            if($(window).width() >= 767){
+                $('#work-this-us').show();
+                $('#conteiner-footer').show();
+            }else{
+                $('#work-this-us').hide();
+                $('#conteiner-footer').hide();
+            } 
+            });
+        });
+
+        //FUNCIONAMIENTO: Muestra la seccion cuando reconoce estar en un disponible tablet o desktop, en caso contrario lo oculta
+        //EJECUCION: Su ejecucion es en tiempo real, en dicho caso, se ejecuta cada vez que el tamaño de la pantalla se modifica(No se ejecuta al iniciar la pantalla).
+        $(function() {
+        $(window).resize(function() {
+            if($(window).width() >= 767){
+                $('#work-this-us').show();
+                $('#conteiner-footer').show();
+            }else{
+                $('#work-this-us').hide();
+                $('#conteiner-footer').hide();
+            } 
+            });
+        });
+
+        //funcion para la aparicion del header dependiendo el dispositivo
+        //FUNCIONAMIENTO: Modifica el header dependiendo en el dispositivo que se encuentre.
+        //EJECUCION: En tiempo de compilacion, en dicho caso, solo se ejecuta una unica vez al iniciar pantalla.
+        $(function () {
+            $(window).ready(function() {
+                    if($(window).width() <= 1023){
+                        $('#menu').show();
+                        $('#logo-mobile-tablet').show();
+                        $('#works').show();
+                        $('#header-nav-desktop').hide();
+                        $('#logo-desktop').hide();
+                        $('#works-desktop').hide();
+                    }else{
+                        $('#menu').hide();
+                        $('#logo-mobile-tablet').hide();
+                        $('#works').hide();
+                        $('#header-nav-desktop').show();
+                        $('#logo-desktop').show();
+                        $('#works-desktop').show();
+                    } 
+                    });
+        })
+
+        //FUNCIONAMIENTO: Modifica el header dependiendo en el dispositivo que se encuentre.
+        //EJECUCION: En tiempo real, en dicho caso, se ejecuta al haber una modificacion de pantalla.
+        $(function() {
+            $(window).resize(function () {
+                if($(window).width() <= 1023){
+                        $('#menu').show();
+                        $('#logo-mobile-tablet').show();
+                        $('#works').show();
+                        $('#header-nav-desktop').hide();
+                        $('#logo-desktop').hide();
+                        $('#works-desktop').hide();
+                    }else{
+                        $('#menu').hide();
+                        $('#logo-mobile-tablet').hide();
+                        $('#works').hide();
+                        $('#header-nav-desktop').show();
+                        $('#logo-desktop').show();
+                        $('#works-desktop').show();
+                    } 
+                    });
+            })
+
+        //Funcion de NavBar para desktop 
+        //FUNCIONAMIENTO: Muestra la Navbar version desktop cuando se reconoce estar en un dispositivo desktop y se supera el limite establecido de scroll
+        //CONDICION: En caso de no cumplir con alguna de las dos condiciones, no se mostrara.
+        //EJECUCION: En tiempo real.     
+        $(function() {
+            $(window).scroll(function() {
+                var scroll = $(window).scrollTop();
+                if($(window).width() >= 1024){
+                    if (scroll >= 20) {
+                    $("#nav-desktop-alternate").show("1s");
+                    } else {
+                        $("#nav-desktop-alternate").hide("1s");
+                    }
+                }
+            });
+        });
+
+        //Funcion de NavBar para desktop
+        //FUNCIONAMIENTO: Oculta la Navbar de la version desktop cuando reconoce que la pantalla esta siendo modificada y saliendo de la version desktop
+        //EJECUCION: En tiempo real, cuando la pantalla es modificada.
+        $(function () {
+            $(window).resize(function () {
+                if ($(window).width() <= 1023) {
+                    $("#nav-desktop-alternate").hide("1s");
+                }
+            })
+        })
+        
+    
+    
+        </script>
+</body>
+</html>
