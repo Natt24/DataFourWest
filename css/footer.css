@@ -65,7 +65,6 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    left: -4rem;
 }
 
 .copyright p{
@@ -266,7 +265,6 @@ footer{
 
     .copyright{
         font-size: 14pt;
-        left: -15%;
     }
 
     .footer-relinks{
@@ -334,14 +332,6 @@ footer{
 
     .footer-links img{
         width: 2.4rem;
-        
-    }
-
-    .copyright{
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
         
     }
     

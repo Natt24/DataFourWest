@@ -409,6 +409,10 @@ header button{
     margin: 0;
   }
 
+  .nav-desktop-alternate button{
+    margin-right: 1rem;
+  }
+
   .nav-links-desktop{
     display: flex;
     flex-direction: row;
